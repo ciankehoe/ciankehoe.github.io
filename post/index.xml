@@ -6,14 +6,14 @@
     <description>Recent content in Posts on Gimli Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Jan 2021 22:35:50 +0000</lastBuildDate><atom:link href="https://ciankehoe.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Oct 2020 19:36:33 +0000</lastBuildDate><atom:link href="https://ciankehoe.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Sample Post</title>
-      <link>https://ciankehoe.github.io/sample-post/</link>
-      <pubDate>Tue, 19 Jan 2021 22:35:50 +0000</pubDate>
+      <title>What is Gimli?</title>
+      <link>https://ciankehoe.github.io/post-01/</link>
+      <pubDate>Sun, 25 Oct 2020 19:36:33 +0000</pubDate>
       
-      <guid>https://ciankehoe.github.io/sample-post/</guid>
-      <description></description>
+      <guid>https://ciankehoe.github.io/post-01/</guid>
+      <description>Overview of what Gimli is, and its core goals. Following many long discussions about numerous possible projects to pursue, we decided on 2 primary candidates (including what is now Gimli). We then met with Dr. Michael Scriney - who agreed to take on the role of project supervisor - to discuss these ideas further. We had a few questions we wanted to ask in order to flesh out our perspective of the proposed projects in terms of scope and complexity, and in relation to what would be suitable for the Third Year Project.</description>
     </item>
     
   </channel>
