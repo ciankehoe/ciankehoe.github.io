@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.80.0" />
-  <link rel="canonical" href="/post/">
+  <link rel="canonical" href="/post-05/">
 
   
 
@@ -39,7 +39,7 @@
 
   
   
-  <title>Posts | Gimli Blog</title>
+  <title>Re-implementing the login system | Gimli Blog</title>
 </head>
 
   <body>
@@ -229,132 +229,59 @@
       <div class="main-and-footer">
         <div>
           
-<main id="main">
-  <h1>Posts</h1>
+  <main id="main">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Re-implementing the login system
+    </h1>
+
+    <div class="date">
+      
+      
+      <strong>Publish date: </strong>Jan 26, 2021
+      
+        
+      
+    </div>
+
+    
+    
+    
+      
+
+
+    
+
+    <p>Following our last meeting with Dr. Scriney, we have remade our registration and login using the built-in Django authentication models. This process was not too difficult as we had the bones of what we needed from our manual approach. Going forward this approach does seem easier to manage and does what we need it to extremely well. Working with the Django auth model does have its downfalls as we cannot add custom fields to our user model, however for now this is not a major issue. When we need to set a custom field for a user, eg. how much gold they have, we will simply need to build an extended user model which will have a one-to-one relationship with the auth user model. We will simply create an instance of this extended user model for each user during the user creation process.</p>
+<p>As such, we are keeping in mind small aspects like this in order to ensure that we are building a system, block by block, which is as future-proofed as we can currently imagine. We want to define a well structured foundation for the project so as not to be held up by problems further down the line due to poor design choices early on. Keeping on top of all these small aspects will hopefully add up and leave us in a strong position as the system grows in complexity.</p>
+
+  </main>
+  <div id="disqus-container">
   
-  <input
-    id="search"
-    type="text"
-    placeholder="Search by title..."
-    aria-label="Search by title"
-  />
+    <button id="disqus-button" onclick="showComments()">Show comments</button>
+    <div id="disqus-comments">
+      
+      
+      
+        <p><em>Disqus comments are disabled.</em></p>
+        <script type="application/javascript">
+          function showComments() {
+            // Remove button
+var disqusButton = document.getElementById('disqus-button');
+disqusButton.parentNode.removeChild(disqusButton); 
+// Un-hide comments
+var disqusComments = document.getElementById('disqus-comments');
+disqusComments.style.display = 'block'; 
+          }
+        </script>
+      
+      <noscript>Enable JavaScript to view Disqus comments.</noscript>
+    </div>
   
-  <ul class="patterns-list" id="list">
-    
-    <li>
-      <h2>
-        <a href="/post-07/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Batching the API
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-06/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Building the Django Model Structure &#43; Basic Navigability
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-05/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Re-implementing the login system
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-04/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Review of the database design
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-03/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Designing the Gimli data model
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-02/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          The Upskilling Process
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-01/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          What is Gimli?
-        </a>
-      </h2>
-    </li>
-    
-  </ul>
-</main>
+</div>
+
 
           
             <footer role="contentinfo">

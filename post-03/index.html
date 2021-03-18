@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.80.0" />
-  <link rel="canonical" href="/post/">
+  <link rel="canonical" href="/post-03/">
 
   
 
@@ -39,7 +39,7 @@
 
   
   
-  <title>Posts | Gimli Blog</title>
+  <title>Designing the Gimli data model | Gimli Blog</title>
 </head>
 
   <body>
@@ -229,132 +229,62 @@
       <div class="main-and-footer">
         <div>
           
-<main id="main">
-  <h1>Posts</h1>
+  <main id="main">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Designing the Gimli data model
+    </h1>
+
+    <div class="date">
+      
+      
+      <strong>Publish date: </strong>Jan 17, 2021
+      
+        
+      
+    </div>
+
+    
+    
+    
+      
+
+
+    
+
+    <p>Following our last meeting with Dr. Scriney, we had built our prototype user Registration and Login System using Django. This Login System is not necessarily specific to Gimli and could be used with any platform. With the workload of many deadlines and exams for our first semester, we ideally would have liked to make more progress. However, in saying this we are still on track and haven’t strayed from our initial timetable so far. We are confident that we can still match our outlined plan and complete the project to the specification we’ve initially set.</p>
+<p><img src="https://i.imgur.com/UbdSSYQ.png" alt="whiteboard database design"></p>
+<p><img src="https://i.imgur.com/Jdp8KPS.png" alt="whiteboard database design"></p>
+<p>With a meeting organised with our supervisor for the morning of the 18th, we have created a first draft database design / data model to show to Dr. Scriney. This will allow us to receive feedback on what is good and bad about our initial design. We are hoping that we can get this key element of the design ironed out and defined at this early stage in order to aid our implementation progress. We have spent a significant amount of time designing the flow of data for this platform and as such we hope that with the time and effort put in by ourselves, along with Dr. Scriney’s expertise in this area, we can finalise this aspect and move forward with this data model target.</p>
+<p>Our design tries to take into account our entire system however as the system may change so could the database. We have decided to use an SQLite database throughout most of our process - or at least to begin with - as it is lightweight and extremely easy to set up manage and wipe if needs be. This is ideal for the agile and robust nature of our first foray into developing with a new set of technologies, and on a larger project as a team. At a later date, we will change the to a MySQL database as this is more robust and technically suited for the large number of concurrent users for which our system is designed for, and for a more complete and production ready project.</p>
+
+  </main>
+  <div id="disqus-container">
   
-  <input
-    id="search"
-    type="text"
-    placeholder="Search by title..."
-    aria-label="Search by title"
-  />
+    <button id="disqus-button" onclick="showComments()">Show comments</button>
+    <div id="disqus-comments">
+      
+      
+      
+        <p><em>Disqus comments are disabled.</em></p>
+        <script type="application/javascript">
+          function showComments() {
+            // Remove button
+var disqusButton = document.getElementById('disqus-button');
+disqusButton.parentNode.removeChild(disqusButton); 
+// Un-hide comments
+var disqusComments = document.getElementById('disqus-comments');
+disqusComments.style.display = 'block'; 
+          }
+        </script>
+      
+      <noscript>Enable JavaScript to view Disqus comments.</noscript>
+    </div>
   
-  <ul class="patterns-list" id="list">
-    
-    <li>
-      <h2>
-        <a href="/post-07/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Batching the API
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-06/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Building the Django Model Structure &#43; Basic Navigability
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-05/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Re-implementing the login system
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-04/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Review of the database design
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-03/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Designing the Gimli data model
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-02/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          The Upskilling Process
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-01/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          What is Gimli?
-        </a>
-      </h2>
-    </li>
-    
-  </ul>
-</main>
+</div>
+
 
           
             <footer role="contentinfo">

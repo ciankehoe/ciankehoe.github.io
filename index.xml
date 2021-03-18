@@ -6,7 +6,61 @@
     <description>Recent content on Gimli Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Oct 2020 19:36:33 +0000</lastBuildDate><atom:link href="https://ciankehoe.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Feb 2021 02:19:34 +0000</lastBuildDate><atom:link href="https://ciankehoe.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Batching the API</title>
+      <link>https://ciankehoe.github.io/post-07/</link>
+      <pubDate>Fri, 12 Feb 2021 02:19:34 +0000</pubDate>
+      
+      <guid>https://ciankehoe.github.io/post-07/</guid>
+      <description>We currently have a navigable platform, with users and a model system that can be populated. The models have been built according to plan and we now have a system where mines can be populated with problem veins and problem veins can be populated with problems. We’re happy to see that the hierarchy we had in mind is beginning to emerge in the same way as we had initially designed. All creating and editing of Mines, Problem Veins, and Problems are done via the REST API which we have built.</description>
+    </item>
+    
+    <item>
+      <title>Building the Django Model Structure &#43; Basic Navigability</title>
+      <link>https://ciankehoe.github.io/post-06/</link>
+      <pubDate>Fri, 05 Feb 2021 16:50:32 +0000</pubDate>
+      
+      <guid>https://ciankehoe.github.io/post-06/</guid>
+      <description>At this point, we are ready to build the majority of the Django models which will be used throughout the platform. These will include our models for Mines, Problem veins, and Problems. While we are creating these models based on the database model which we went through with Dr. Scriney, we will also be building our REST API as we are adding these models. We felt building them both up as we go was a more practical methodology and would help us group functionality and allow us to tick off our list more wholly.</description>
+    </item>
+    
+    <item>
+      <title>Re-implementing the login system</title>
+      <link>https://ciankehoe.github.io/post-05/</link>
+      <pubDate>Tue, 26 Jan 2021 11:50:26 +0000</pubDate>
+      
+      <guid>https://ciankehoe.github.io/post-05/</guid>
+      <description>Following our last meeting with Dr. Scriney, we have remade our registration and login using the built-in Django authentication models. This process was not too difficult as we had the bones of what we needed from our manual approach. Going forward this approach does seem easier to manage and does what we need it to extremely well. Working with the Django auth model does have its downfalls as we cannot add custom fields to our user model, however for now this is not a major issue.</description>
+    </item>
+    
+    <item>
+      <title>Review of the database design</title>
+      <link>https://ciankehoe.github.io/post-04/</link>
+      <pubDate>Wed, 20 Jan 2021 02:07:43 +0000</pubDate>
+      
+      <guid>https://ciankehoe.github.io/post-04/</guid>
+      <description>During our meeting with Dr. Scriney, we discussed a number of different aspects of design and implementation, in order to fine-tune how we should tackle certain parts of the project. With relation to the database which we presented, it was suggested that we add a many-to-many relationship between the Mines and Users. This made immediate sense to us and was a hiccup on our part. Apart from that, Dr. Scriney seemed happy with our database design and from comments which he made, seemed to appreciate the level of understanding we had of how it will work as a system.</description>
+    </item>
+    
+    <item>
+      <title>Designing the Gimli data model</title>
+      <link>https://ciankehoe.github.io/post-03/</link>
+      <pubDate>Sun, 17 Jan 2021 15:11:41 +0000</pubDate>
+      
+      <guid>https://ciankehoe.github.io/post-03/</guid>
+      <description>Following our last meeting with Dr. Scriney, we had built our prototype user Registration and Login System using Django. This Login System is not necessarily specific to Gimli and could be used with any platform. With the workload of many deadlines and exams for our first semester, we ideally would have liked to make more progress. However, in saying this we are still on track and haven’t strayed from our initial timetable so far.</description>
+    </item>
+    
+    <item>
+      <title>The Upskilling Process</title>
+      <link>https://ciankehoe.github.io/post-02/</link>
+      <pubDate>Mon, 14 Dec 2020 17:02:37 +0000</pubDate>
+      
+      <guid>https://ciankehoe.github.io/post-02/</guid>
+      <description>Although we now have a rather good idea of what we want our final product to be, we now have to explore options relating to how we are going to actually execute our implementation. Several weeks ago we began exploring and experimenting with different languages and frameworks which we felt may be useful for our project. Several of these were suggested to us by our supervisor, Dr. Scriney, during our second meeting with him following an in-depth conversation about our initial plans for the project.</description>
+    </item>
+    
     <item>
       <title>What is Gimli?</title>
       <link>https://ciankehoe.github.io/post-01/</link>

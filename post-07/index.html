@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.80.0" />
-  <link rel="canonical" href="/post/">
+  <link rel="canonical" href="/post-07/">
 
   
 
@@ -39,7 +39,7 @@
 
   
   
-  <title>Posts | Gimli Blog</title>
+  <title>Batching the API | Gimli Blog</title>
 </head>
 
   <body>
@@ -229,132 +229,59 @@
       <div class="main-and-footer">
         <div>
           
-<main id="main">
-  <h1>Posts</h1>
+  <main id="main">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Batching the API
+    </h1>
+
+    <div class="date">
+      
+      
+      <strong>Publish date: </strong>Feb 12, 2021
+      
+        
+      
+    </div>
+
+    
+    
+    
+      
+
+
+    
+
+    <p>We currently have a navigable platform, with users and a model system that can be populated. The models have been built according to plan and we now have a system where mines can be populated with problem veins and problem veins can be populated with problems. We’re happy to see that the hierarchy we had in mind is beginning to emerge in the same way as we had initially designed. All creating and editing of Mines, Problem Veins, and Problems are done via the REST API which we have built. However, this API is currently not ideally built, as it is built across multiple Django applications. Therefore, we essentially have separate API’s for each Django application versus having the API correctly integrated into the platform/project as a singular entity. We are currently exploring different methods of how we can fix this issue to leave us with just one API for our entire project.</p>
+<p>Currently, the front runner is a method known as batching which essentially means bunching all the API’s across our Django applications. This involves registering all the individual registries of each individual API router to one ‘super router’. This would allow all of our individual APIs to be bunched in one location. This would ultimately make our API easier to manage while also improving the security of our API as there is only one location to worry about and data is not widely spread and dispersed.</p>
+
+  </main>
+  <div id="disqus-container">
   
-  <input
-    id="search"
-    type="text"
-    placeholder="Search by title..."
-    aria-label="Search by title"
-  />
+    <button id="disqus-button" onclick="showComments()">Show comments</button>
+    <div id="disqus-comments">
+      
+      
+      
+        <p><em>Disqus comments are disabled.</em></p>
+        <script type="application/javascript">
+          function showComments() {
+            // Remove button
+var disqusButton = document.getElementById('disqus-button');
+disqusButton.parentNode.removeChild(disqusButton); 
+// Un-hide comments
+var disqusComments = document.getElementById('disqus-comments');
+disqusComments.style.display = 'block'; 
+          }
+        </script>
+      
+      <noscript>Enable JavaScript to view Disqus comments.</noscript>
+    </div>
   
-  <ul class="patterns-list" id="list">
-    
-    <li>
-      <h2>
-        <a href="/post-07/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Batching the API
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-06/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Building the Django Model Structure &#43; Basic Navigability
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-05/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Re-implementing the login system
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-04/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Review of the database design
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-03/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Designing the Gimli data model
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-02/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          The Upskilling Process
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-01/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          What is Gimli?
-        </a>
-      </h2>
-    </li>
-    
-  </ul>
-</main>
+</div>
+
 
           
             <footer role="contentinfo">
