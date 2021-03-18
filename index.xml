@@ -6,7 +6,52 @@
     <description>Recent content on Gimli Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Feb 2021 02:19:34 +0000</lastBuildDate><atom:link href="https://ciankehoe.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Mar 2021 22:12:38 +0000</lastBuildDate><atom:link href="https://ciankehoe.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Allowing the management of multiple languages</title>
+      <link>https://ciankehoe.github.io/post-12/</link>
+      <pubDate>Thu, 11 Mar 2021 22:12:38 +0000</pubDate>
+      
+      <guid>https://ciankehoe.github.io/post-12/</guid>
+      <description>At present we have the entire platform - essentially on the frontend i.e to the user - set up to only handle Python based submissions. However, our editor and submission system is built to be able to handle an abundance of different programming languages - compiled and interpreted. As set out early in the design process, we want to give mine owners the ability to set languages that are acceptable within a certain Problem Vein they create.</description>
+    </item>
+    
+    <item>
+      <title>Proper Test Case Deletion &amp; Editor Submission JSON Generator Correction</title>
+      <link>https://ciankehoe.github.io/post-11/</link>
+      <pubDate>Thu, 11 Mar 2021 12:19:47 +0000</pubDate>
+      
+      <guid>https://ciankehoe.github.io/post-11/</guid>
+      <description>Proper Test Case Deletion With the entire submission system now built and working. We have realized that once a test case is deleted from the database the input and output files of the test case are not deleted from file storage. We will have to put a mechanism in place which will automatically delete the test case files from our system once a test case is deleted. Although we are not certain how we will approach this we believe we will have to use a Django receiver which is triggered on a post_delete request.</description>
+    </item>
+    
+    <item>
+      <title>Implementing the Submission Text Editor</title>
+      <link>https://ciankehoe.github.io/post-10/</link>
+      <pubDate>Sun, 07 Mar 2021 19:57:03 +0000</pubDate>
+      
+      <guid>https://ciankehoe.github.io/post-10/</guid>
+      <description>With the submission system now up and running, we can add our planned text editor. We will be using the Django-ace editor. Once set up this should fit into our platform very well. The aim is to have it only appear following the first submission of a problem i.e if the user has not made any submission for that particular problem, it won’t display. The text editor will show the code which was submitted in the last submission for that problem - no matter the language, or whether it was a success or failure.</description>
+    </item>
+    
+    <item>
+      <title>The Submission System</title>
+      <link>https://ciankehoe.github.io/post-09/</link>
+      <pubDate>Mon, 01 Mar 2021 10:30:40 +0000</pubDate>
+      
+      <guid>https://ciankehoe.github.io/post-09/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nested Formsets for adding Test Cases</title>
+      <link>https://ciankehoe.github.io/post-08/</link>
+      <pubDate>Fri, 26 Feb 2021 09:12:02 +0000</pubDate>
+      
+      <guid>https://ciankehoe.github.io/post-08/</guid>
+      <description>With the option of adding problem veins to problems currently available on the platform. We now want to add the ability to assign multiple test cases to each of these problems. This may prove challenging to integrate with how adding a question is currently set up. At present, questions are added via what is known as a Django formset, a service we are making liberal and efficient use of. This is essentially a number of forms grouped together, however once the form is filled out, a new empty form is automatically generated beneath.</description>
+    </item>
+    
     <item>
       <title>Batching the API</title>
       <link>https://ciankehoe.github.io/post-07/</link>

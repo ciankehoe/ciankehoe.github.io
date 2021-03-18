@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.80.0" />
-  <link rel="canonical" href="/post/">
+  <link rel="canonical" href="/post-11/">
 
   
 
@@ -39,7 +39,7 @@
 
   
   
-  <title>Posts | Gimli Blog</title>
+  <title>Proper Test Case Deletion &amp; Editor Submission JSON Generator Correction | Gimli Blog</title>
 </head>
 
   <body>
@@ -229,212 +229,61 @@
       <div class="main-and-footer">
         <div>
           
-<main id="main">
-  <h1>Posts</h1>
+  <main id="main">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Proper Test Case Deletion &amp; Editor Submission JSON Generator Correction
+    </h1>
+
+    <div class="date">
+      
+      
+      <strong>Publish date: </strong>Mar 11, 2021
+      
+        
+      
+    </div>
+
+    
+    
+    
+      
+
+
+    
+
+    <h3 id="proper-test-case-deletion">Proper Test Case Deletion</h3>
+<p>With the entire submission system now built and working. We have realized that once a test case is deleted from the database the input and output files of the test case are not deleted from file storage. We will have to put a mechanism in place which will automatically delete the test case files from our system once a test case is deleted. Although we are not certain how we will approach this we believe we will have to use a Django receiver which is triggered on a post_delete request.</p>
+<h3 id="editor-submssion---json-generator-correction">Editor Submssion - JSON Generator Correction</h3>
+<p>At this point we have begun to bring together the statistics service in conjunction with the core submission system - i.e gathering metrics and performing analysis on user submitted code. Each submission generates a unique JSON result which is attached to the submission on grouped with it in the directory structure. One piece of information contained in the JSON result file is the timestamp of the submission. As one of the pieces of data displayed through the statistics service is the most recent submissions for any given user, the timestamp is vital for collecting the correct recent submission results. However, what we noticed is that when the submission is made through the editor in the submission system (resubmission), although the submission source code and generated JSON was being stored correctly, the JSON data was incomplete. Namely, the timestamp was not being recorded. After some digging we realised that the JSON timestamps were being overwritten for the previous submission whenever an editor submission was made. After some further digging, the issue ended up being that the submission system was mainting the same session details when going from a direct file upload submission to a editor resubmission. Simply put, it came down to the correct path not being set for a resubmission through the editor. The solution was to maintain the session details along with then checking certain flags only when an editor submission was made. Based on this information, the correct paths could be assigned and the relative timestamps matched to the correct submission results JSON result.</p>
+
+  </main>
+  <div id="disqus-container">
   
-  <input
-    id="search"
-    type="text"
-    placeholder="Search by title..."
-    aria-label="Search by title"
-  />
+    <button id="disqus-button" onclick="showComments()">Show comments</button>
+    <div id="disqus-comments">
+      
+      
+      
+        <p><em>Disqus comments are disabled.</em></p>
+        <script type="application/javascript">
+          function showComments() {
+            // Remove button
+var disqusButton = document.getElementById('disqus-button');
+disqusButton.parentNode.removeChild(disqusButton); 
+// Un-hide comments
+var disqusComments = document.getElementById('disqus-comments');
+disqusComments.style.display = 'block'; 
+          }
+        </script>
+      
+      <noscript>Enable JavaScript to view Disqus comments.</noscript>
+    </div>
   
-  <ul class="patterns-list" id="list">
-    
-    <li>
-      <h2>
-        <a href="/post-12/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Allowing the management of multiple languages
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-11/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Proper Test Case Deletion &amp; Editor Submission JSON Generator Correction
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-10/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Implementing the Submission Text Editor
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-09/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          The Submission System
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-08/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Nested Formsets for adding Test Cases
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-07/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Batching the API
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-06/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Building the Django Model Structure &#43; Basic Navigability
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-05/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Re-implementing the login system
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-04/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Review of the database design
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-03/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          Designing the Gimli data model
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-02/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          The Upskilling Process
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h2>
-        <a href="/post-01/">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use xlink:href="#bookmark"></use>
-          </svg>
-          What is Gimli?
-        </a>
-      </h2>
-    </li>
-    
-  </ul>
-</main>
+</div>
+
 
           
             <footer role="contentinfo">
